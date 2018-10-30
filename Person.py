@@ -15,3 +15,6 @@ class Person:
     
     def getName(self):
         return (self._firstName, self._lastName)
+
+    def greet(self):
+        print("Hello there!")
