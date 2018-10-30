@@ -1,6 +1,6 @@
 import datetime, time
 
-class Person:
+class Person(object):
     _birth_date = datetime.date.today()
     _first_name = ''
     _last_name = ''
@@ -14,7 +14,7 @@ class Person:
         return datetime.date.today().year - self._birth_date.year
     
     def getName(self):
-        return (self._firstName, self._lastName)
+        return (self._first_name, self._last_name)
 
     def greet(self):
         print("Hello there!")
